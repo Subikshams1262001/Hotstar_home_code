@@ -1,765 +1,992 @@
 * {
-  margin: 0px;
-  padding: 0px;
+    margin: 0px;
+    padding: 0px;
 }
+
 body {
-  color: white;
-  background-color: #00091a;
-  font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #00091a;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 .header {
-  width: 100%;
-  height: 75px;
-  background-color: black;
-  display: inline-flex;
-  font-size: 16px;
-  color: gainsboro;
-  position: fixed;
-  margin-top: -20px;
+    width: 100%;
+    height: 85px;
+    background-color: black;
+    display: inline-flex;
+    font-size: 16px;
+    color: gainsboro;
+    position: fixed;
+    margin-top: -10px;
 }
+
 .name {
-  margin: 30px 70px;
-  font-size: 18px;
-  font-family: cursive;
+    margin: 30px 70px;
+    font-size: 18px;
+    font-family: Lucida Sans;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.name:hover {
+    color: white;
 }
 
 .header_left {
-  display: inline-flex;
-  margin: 35px 0px 0px -30px;
+    display: inline-flex;
+    margin: 35px 0px 0px -30px;
+    cursor: pointer;
 }
-.tv {
-  margin-right: 20px;
-}
-.movies {
-  margin-right: 20px;
-}
-.sports {
-  margin-right: 20px;
-}
-.news {
-  margin-right: 20px;
-}
-.pre {
-  margin-right: 20px;
-}
-.new {
-  margin-right: 20px;
-}
-.spa {
-  color: rgba(13, 123, 197, 0.856);
-  text-decoration: none;
 
-  font-size: 13px;
+.tv {
+    margin-right: 20px;
+}
+
+.tv:hover {
+    color: white;
+}
+
+.movies {
+    margin-right: 20px;
+}
+
+.movies:hover {
+    color: white;
+}
+
+.sports {
+    margin-right: 20px;
+}
+
+.sports:hover {
+    color: white;
+}
+
+.news {
+    margin-right: 20px;
+}
+
+.news:hover {
+    color: white;
+}
+
+.pre {
+    margin-right: 20px;
+}
+
+.pre:hover {
+    color: white;
+}
+
+.new {
+    margin-right: 20px;
+}
+
+.new:hover {
+    color: white;
+}
+
+.spa {
+    color: rgba(13, 123, 197, 0.856);
+    text-decoration: none;
+    font-size: 13px;
 }
 
 a:link {
-  text-decoration: none !important;
+    text-decoration: none !important;
 }
-.kid {
-  margin-right: 220px;
-  color: orange;
-  font-family: Copperplate;
-}
-.log {
-  padding: 5px;
-  font-weight: bold;
-}
-.button {
-  width: 90px;
-  height: 25px;
-  background-color: #1a8cff;
-  border-radius: 5px;
-  color: white;
-  font-weight: bold;
-  margin-right: 20px;
-}
-.search {
-  margin-right: 120px;
-  font-weight: bold;
-}
-.coverimg {
-  margin-top: 20px;
-  width: 100%;
-  height: 400px;
-}
-.heading1 {
-  margin-top: 60px;
-  margin-left: 25px;
-}
-.heading {
-  margin-top: 30px;
-  margin-left: 25px;
-}
-.wrapper {
-  margin-top: 10px;
-  max-height: 240px;
-  display: flex;
-  overflow-x: auto;
-  margin-left: 20px;
-}
-.wrapper::-webkit-scrollbar {
-  width: 0;
-}
-.wrapper .item {
-  margin: 0px 6px 0px 10px;
 
-  width: 150px;
-  height: 180px;
-  border-radius: 5px;
-  }
-  
+.kid {
+    margin-right: 220px;
+    color: orange;
+    font-family: Copperplate;
+}
+
+.log {
+    padding: 5px;
+    font-weight: bold;
+}
+
+.button {
+    width: 90px;
+    height: 25px;
+    background-color: #1a8cff;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.anchor {
+    color: white;
+}
+
+.search {
+    margin-right: 120px;
+    font-weight: bold;
+}
+
+.coverimg {
+    margin-top: 75px;
+    width: 100%;
+    height: 400px;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.heading1 {
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+.heading {
+    margin-top: 30px;
+    margin-left: 25px;
+}
+
+.wrapper {
+    margin-top: 10px;
+    max-height: 240px;
+    display: flex;
+    overflow-x: auto;
+    margin-left: 20px;
+}
+
+.wrapper::-webkit-scrollbar {
+    width: 0;
+}
+
+.wrapper .item {
+    margin: 0px 6px 0px 10px;
+    width: 150px;
+    height: 180px;
+    border-radius: 5px;
+}
 
 .footer {
-  height: 140px;
-  margin-top: 80px;
-  margin-left: 30px;
+    height: 140px;
+    margin-top: 80px;
+    margin-left: 30px;
 }
-.abt {
-  color: gainsboro;
-  text-decoration: none;
-  font-size: 15px;
-}
-.abt:hover {
-  color: blue;
-}
-.copy {
-  width: 580px;
-  font-size: 12px;
-  color: gainsboro;
-  margin-top: 20px;
-  line-height: 20px;
-}
-.connect {
-  margin-left: 700px;
-  margin-top: -95px;
-  font-size: 15px;
-  color: gainsboro;
-}
-.fb {
-  margin-top: 15px;
-}
-.fbimg {
-  border-radius: 5px;
 
-  margin-left: 700px;
-  width: 50px;
-  height: 50px;
+.abt {
+    color: gainsboro;
+    text-decoration: none;
+    font-size: 15px;
 }
+
+.abt:hover {
+    color: blue;
+}
+
+.copy {
+    width: 580px;
+    font-size: 12px;
+    color: gainsboro;
+    margin-top: 20px;
+    line-height: 20px;
+}
+
+.connect {
+    margin-left: 700px;
+    margin-top: -95px;
+    font-size: 15px;
+    color: gainsboro;
+}
+
+.fb {
+    margin-top: 15px;
+}
+
+.fbimg {
+    border-radius: 5px;
+    margin-left: 700px;
+    width: 50px;
+    height: 50px;
+}
+
 .twitimg {
-  margin-top: -50px;
-  border-radius: 5px;
-  margin-left: 760px;
-  width: 50px;
-  height: 50px;
+    margin-top: -50px;
+    border-radius: 5px;
+    margin-left: 760px;
+    width: 50px;
+    height: 50px;
 }
+
 .connect2 {
-  margin-top: -80px;
-  font-size: 15px;
-  margin-left: 980px;
-  color: gainsboro;
+    margin-top: -80px;
+    font-size: 15px;
+    margin-left: 980px;
+    color: gainsboro;
 }
+
 .google {
-  margin-top: 10px;
+    margin-top: 10px;
 }
 
 .googleimg {
-  margin-top: 5px;
-  border-radius: 5px;
-  margin-left: 980px;
-  width: 140px;
-  height: 50px;
+    margin-top: 5px;
+    border-radius: 5px;
+    margin-left: 980px;
+    width: 140px;
+    height: 50px;
 }
+
 .appleimg {
-  margin-top: -51px;
-  border-radius: 5px;
-  margin-left: 1130px;
-  width: 140px;
-  height: 50px;
+    margin-top: -51px;
+    border-radius: 5px;
+    margin-left: 1130px;
+    width: 140px;
+    height: 50px;
 }
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown-content {
+    margin: 20px 0px 0px -20px;
+    display: none;
+    position: absolute;
+    background-color: #00091a;
+    width: 140px;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    font-size: 14px;
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#langsize {
+    width: 100px;
+}
+
+#sportsize {
+    width: 130px;
+}
+
 @media screen and (min-width: 70px) and (max-width: 310px) {
-  h4 {
-    display: none;
-  }
-  .name {
-    margin: 30px 5px;
-    font-size: 13px;
-    margin-right: 50px;
-  }
-  .search {
-    display: none;
-  }
-  .log {
-    font-size: 13px;
-    margin-top: -8px;
-    margin-left: 50px;
-  }
-  .button {
-    width: 80px;
-    font-size: 11px;
-
-    margin-left: 60px;
-    margin-top: -2px;
-    display: none;
-  }
-  .coverimg {
-    height: 200px;
-  }
-  .heading {
-    margin-left: 8px;
-    font-size: 15px;
-  }
-  .heading1 {
-    margin-left: 8px;
-    font-size: 15px;
-  }
-  .wrapper {
-    max-height: 180px;
-    display: flex;
-    overflow-x: auto;
-    margin-left: 2px;
-  }
-  .wrapper .item {
-    margin: 0px 3px 0px 7px;
-
-    width: 100px;
-    height: 120px;
-  }
-  .footer {
-    margin-left: 20px;
-    height: 500px;
-  }
-  .abt {
-    font-size: 14px;
-    margin-left: 2px;
-    line-height: 10px;
-  }
-  .copy {
-    width: 260px;
-    font-size: 12px;
-    color: gainsboro;
-    margin-top: 20px;
-    line-height: 20px;
-  }
-  .connect {
-    margin-left: 8px;
-    margin-top: 30px;
-
-    font-size: 13px;
-    color: gainsboro;
-  }
-  .fb {
-    margin-left: -690px;
-  }
-  .fbimg {
-    width: 40px;
-    height: 40px;
-  }
-  .twitimg {
-    width: 40px;
-    height: 40px;
-    margin-top: -40px;
-    margin-left: 5px;
-  }
-
-  .connect2 {
-    margin-top: -72px;
-    font-size: 13px;
-    margin-left: 160px;
-    color: gainsboro;
-  }
-  .google {
-    margin-left: -50px;
-  }
-
-  .googleimg {
-    margin-left: 200px;
-    width: 90px;
-    height: 40px;
-    margin-top: 10px;
-  }
-  .appleimg {
-    margin-left: 200px;
-    margin-top: 10px;
-    width: 90;
-    height: 40px;
-  }
+    h4 {
+        display: none;
+    }
+    .name {
+        margin: 30px 5px;
+        font-size: 13px;
+        margin-right: 50px;
+    }
+    .search {
+        display: none;
+    }
+    .log {
+        font-size: 13px;
+        margin-top: -8px;
+        margin-left: 50px;
+    }
+    .button {
+        width: 80px;
+        font-size: 11px;
+        margin-left: 60px;
+        margin-top: -2px;
+        display: none;
+    }
+    .coverimg {
+        height: 200px;
+    }
+    .heading {
+        margin-left: 8px;
+        font-size: 15px;
+    }
+    .heading1 {
+        margin-left: 8px;
+        font-size: 15px;
+    }
+    .wrapper {
+        max-height: 180px;
+        display: flex;
+        overflow-x: auto;
+        margin-left: 2px;
+    }
+    .wrapper .item {
+        margin: 0px 3px 0px 7px;
+        width: 100px;
+        height: 120px;
+    }
+    .footer {
+        margin-left: 20px;
+        height: 500px;
+    }
+    .abt {
+        font-size: 14px;
+        margin-left: 2px;
+        line-height: 10px;
+    }
+    .copy {
+        width: 260px;
+        font-size: 12px;
+        color: gainsboro;
+        margin-top: 20px;
+        line-height: 20px;
+    }
+    .connect {
+        margin-left: 8px;
+        margin-top: 30px;
+        font-size: 13px;
+        color: gainsboro;
+    }
+    .fb {
+        margin-left: -690px;
+    }
+    .fbimg {
+        width: 40px;
+        height: 40px;
+    }
+    .twitimg {
+        width: 40px;
+        height: 40px;
+        margin-top: -40px;
+        margin-left: 5px;
+    }
+    .connect2 {
+        margin-top: -72px;
+        font-size: 13px;
+        margin-left: 160px;
+        color: gainsboro;
+    }
+    .google {
+        margin-left: -50px;
+    }
+    .googleimg {
+        margin-left: 200px;
+        width: 90px;
+        height: 40px;
+        margin-top: 10px;
+    }
+    .appleimg {
+        margin-left: 200px;
+        margin-top: 10px;
+        width: 90;
+        height: 40px;
+    }
+    .prev,
+    .next {
+        top: 20%;
+    }
 }
+
 @media screen and (min-width: 311px) and (max-width: 350px) {
-  h4 {
-    display: none;
-  }
-  .name {
-    margin: 20px 5px;
-    font-size: 13px;
-    margin-right: 60px;
-  }
-  .search {
-    display: none;
-  }
-  .log {
-    display: none;
-  }
-  .button {
-    width: 80px;
-    font-size: 12px;
-
-    margin-left: 60px;
-    margin-top: -15px;
-  }
-  .coverimg {
-    height: 150px;
-  }
-  .header {
-    height: 60px;
-  }
-  .heading {
-    margin-left: 2px;
-    font-size: 15px;
-  }
-  .heading1 {
-    margin-left: 2px;
-    font-size: 15px;
-  }
-  .wrapper {
-    max-height: 180px;
-    display: flex;
-    overflow-x: auto;
-    margin-left: 2px;
-  }
-  .wrapper .item {
-    margin: 0px 3px 0px 5px;
-
-    width: 100px;
-    height: 130px;
-  }
-  .footer {
-    margin-left: 20px;
-    height: 500px;
-  }
-  .abt {
-    font-size: 14px;
-    margin-left: 2px;
-    line-height: 10px;
-  }
-  .copy {
-    width: 290px;
-    font-size: 12px;
-    color: gainsboro;
-    margin-top: 20px;
-    line-height: 20px;
-  }
-  .connect {
-    margin-left: 3px;
-    margin-top: 30px;
-
-    font-size: 14px;
-    color: gainsboro;
-  }
-  .fb {
-    margin-left: -700px;
-  }
-  .fbimg {
-    width: 40px;
-    height: 40px;
-  }
-  .twitimg {
-    width: 40px;
-    height: 40px;
-    margin-top: -40px;
-    margin-left: 5px;
-  }
-
-  .connect2 {
-    margin-top: -70px;
-    font-size: 14px;
-    margin-left: 150px;
-    color: gainsboro;
-  }
-
-  .googleimg {
-    margin-left: 150px;
-    width: 130px;
-    height: 40px;
-    margin-top: 10px;
-  }
-  .appleimg {
-    margin-left: 150px;
-    margin-top: 10px;
-    width: 130;
-    height: 40px;
-  }
+    h4 {
+        display: none;
+    }
+    .name {
+        margin: 20px 5px;
+        font-size: 13px;
+        margin-right: 60px;
+    }
+    .search {
+        display: none;
+    }
+    .log {
+        display: none;
+    }
+    .button {
+        width: 80px;
+        font-size: 12px;
+        margin-left: 60px;
+        margin-top: -15px;
+    }
+    .coverimg {
+        height: 150px;
+    }
+    .header {
+        height: 60px;
+    }
+    .heading {
+        margin-left: 2px;
+        font-size: 15px;
+    }
+    .heading1 {
+        margin-left: 2px;
+        font-size: 15px;
+    }
+    .wrapper {
+        max-height: 180px;
+        display: flex;
+        overflow-x: auto;
+        margin-left: 2px;
+    }
+    .wrapper .item {
+        margin: 0px 3px 0px 5px;
+        width: 100px;
+        height: 130px;
+    }
+    .footer {
+        margin-left: 20px;
+        height: 500px;
+    }
+    .abt {
+        font-size: 14px;
+        margin-left: 2px;
+        line-height: 10px;
+    }
+    .copy {
+        width: 290px;
+        font-size: 12px;
+        color: gainsboro;
+        margin-top: 20px;
+        line-height: 20px;
+    }
+    .connect {
+        margin-left: 3px;
+        margin-top: 30px;
+        font-size: 14px;
+        color: gainsboro;
+    }
+    .fb {
+        margin-left: -700px;
+    }
+    .fbimg {
+        width: 40px;
+        height: 40px;
+    }
+    .twitimg {
+        width: 40px;
+        height: 40px;
+        margin-top: -40px;
+        margin-left: 5px;
+    }
+    .connect2 {
+        margin-top: -70px;
+        font-size: 14px;
+        margin-left: 150px;
+        color: gainsboro;
+    }
+    .googleimg {
+        margin-left: 150px;
+        width: 130px;
+        height: 40px;
+        margin-top: 10px;
+    }
+    .appleimg {
+        margin-left: 150px;
+        margin-top: 10px;
+        width: 130px;
+        height: 40px;
+    }
+    .prev,
+    .next {
+        top: 20%;
+    }
 }
-@media screen and (min-width: 351px) and (max-width: 420px) {
-  h4 {
-    display: none;
-  }
-  .name {
-    margin: 30px 5px;
-    font-size: 15px;
-    margin-right: 60px;
-  }
-  .search {
-    display: none;
-  }
-  .log {
-    display: none;
-  }
-  .button {
-    width: 90px;
-    font-size: 13px;
 
-    margin-left: 80px;
-    margin-top: -5px;
-  }
-  .coverimg {
-    height: 180px;
-    width: 100%;
-  }
-  .heading {
-    margin-left: 8px;
-    font-size: 15px;
-  }
-  .heading1 {
-    margin-left: 8px;
-    font-size: 15px;
-  }
-  .wrapper {
-    max-height: 180px;
-    display: flex;
-    overflow-x: auto;
-    margin-left: 6px;
-  }
-  .wrapper .item {
-    margin: 0px 3px 0px 5px;
-
-    width: 180px;
-    height: 150px;
-  }
-  .footer {
-    margin-left: 20px;
-    height: 500px;
-  }
-  .abt {
-    font-size: 14px;
-    margin-left: 2px;
-    line-height: 10px;
-  }
-  .copy {
-    width: 340px;
-    font-size: 12px;
-    color: gainsboro;
-    margin-top: 20px;
-    line-height: 20px;
-  }
-  .connect {
-    margin-left: 8px;
-    margin-top: 30px;
-
-    font-size: 14px;
-    color: gainsboro;
-  }
-  .fb {
-    margin-left: -690px;
-  }
-  .fbimg {
-    width: 40px;
-    height: 40px;
-  }
-  .twitimg {
-    width: 40px;
-    height: 40px;
-    margin-top: -40px;
-    margin-left: 5px;
-  }
-
-  .connect2 {
-    margin-top: -70px;
-    font-size: 14px;
-    margin-left: 200px;
-    color: gainsboro;
-  }
-
-  .googleimg {
-    margin-left: 200px;
-    width: 130px;
-    height: 40px;
-    margin-top: 10px;
-  }
-  .appleimg {
-    margin-left: 200px;
-    margin-top: 10px;
-    width: 130;
-    height: 40px;
-  }
+@media screen and (min-width: 351px) and (max-width: 399px) {
+    h4 {
+        display: none;
+    }
+    .name {
+        margin: 30px 5px;
+        font-size: 11px;
+        margin-right: 70px;
+    }
+    .search {
+        display: none;
+    }
+    .log {
+        display: none;
+    }
+    .button {
+        width: 90px;
+        font-size: 13px;
+        margin-left: 80px;
+        margin-top: -5px;
+    }
+    .coverimg {
+        height: 180px;
+        width: 100%;
+    }
+    .heading {
+        margin-left: 8px;
+        font-size: 15px;
+    }
+    .heading1 {
+        margin-left: 8px;
+        font-size: 15px;
+    }
+    .wrapper {
+        max-height: 200px;
+        display: flex;
+        overflow-x: auto;
+        margin-left: 6px;
+    }
+    .wrapper .item {
+        margin: 0px 3px 0px 5px;
+        width: 150px;
+        height: 180px;
+    }
+    .footer {
+        margin-left: 20px;
+        height: 500px;
+    }
+    .abt {
+        font-size: 14px;
+        margin-left: 2px;
+        line-height: 10px;
+    }
+    .copy {
+        width: 340px;
+        font-size: 12px;
+        color: gainsboro;
+        margin-top: 20px;
+        line-height: 20px;
+    }
+    .connect {
+        margin-left: 8px;
+        margin-top: 30px;
+        font-size: 14px;
+        color: gainsboro;
+    }
+    .fb {
+        margin-left: -690px;
+    }
+    .fbimg {
+        width: 40px;
+        height: 40px;
+    }
+    .twitimg {
+        width: 40px;
+        height: 40px;
+        margin-top: -40px;
+        margin-left: 5px;
+    }
+    .connect2 {
+        margin-top: -70px;
+        font-size: 14px;
+        margin-left: 200px;
+        color: gainsboro;
+    }
+    .googleimg {
+        margin-left: 200px;
+        width: 130px;
+        height: 40px;
+        margin-top: 10px;
+    }
+    .appleimg {
+        margin-left: 200px;
+        margin-top: 10px;
+        width: 130;
+        height: 40px;
+    }
+    .prev,
+    .next {
+        top: 18%;
+    }
 }
+
+@media screen and (min-width: 400px) and (max-width: 420px) {
+    h4 {
+        display: none;
+    }
+    .name {
+        margin: 30px 5px;
+        font-size: 15px;
+        margin-right: 60px;
+    }
+    .search {
+        display: none;
+    }
+    .log {
+        display: none;
+    }
+    .button {
+        width: 90px;
+        font-size: 13px;
+        margin-left: 80px;
+        margin-top: -5px;
+    }
+    .coverimg {
+        height: 180px;
+        width: 100%;
+    }
+    .heading {
+        margin-left: 8px;
+        font-size: 15px;
+    }
+    .heading1 {
+        margin-left: 8px;
+        font-size: 15px;
+    }
+    .wrapper {
+        max-height: 200px;
+        display: flex;
+        overflow-x: auto;
+        margin-left: 6px;
+    }
+    .wrapper .item {
+        margin: 0px 3px 0px 5px;
+        width: 150px;
+        height: 180px;
+    }
+    .footer {
+        margin-left: 20px;
+        height: 500px;
+    }
+    .abt {
+        font-size: 14px;
+        margin-left: 2px;
+        line-height: 10px;
+    }
+    .copy {
+        width: 340px;
+        font-size: 12px;
+        color: gainsboro;
+        margin-top: 20px;
+        line-height: 20px;
+    }
+    .connect {
+        margin-left: 8px;
+        margin-top: 30px;
+        font-size: 14px;
+        color: gainsboro;
+    }
+    .fb {
+        margin-left: -690px;
+    }
+    .fbimg {
+        width: 40px;
+        height: 40px;
+    }
+    .twitimg {
+        width: 40px;
+        height: 40px;
+        margin-top: -40px;
+        margin-left: 5px;
+    }
+    .connect2 {
+        margin-top: -70px;
+        font-size: 14px;
+        margin-left: 200px;
+        color: gainsboro;
+    }
+    .googleimg {
+        margin-left: 200px;
+        width: 130px;
+        height: 40px;
+        margin-top: 10px;
+    }
+    .appleimg {
+        margin-left: 200px;
+        margin-top: 10px;
+        width: 130;
+        height: 40px;
+    }
+    .prev,
+    .next {
+        top: 17%;
+    }
+}
+
 @media screen and (min-width: 421px) and (max-width: 540px) {
-  h4 {
-    display: none;
-  }
-  .name {
-    margin: 30px 10px;
-    font-size: 18px;
-    margin-right: 60px;
-  }
-  .search {
-    display: none;
-  }
-  .log {
-    margin-top: -5px;
-  }
-  .button {
-    width: 100px;
-    font-size: 14px;
-
-    margin-left: 80px;
-    margin-top: -5px;
-  }
-  .coverimg {
-    height: 180px;
-  }
-  .footer {
-    margin-left: 20px;
-    height: 700px;
-  }
-  .abt {
-    font-size: 13px;
-    margin-left: 2px;
-    line-height: 10px;
-  }
-  .copy {
-    width: 520px;
-    font-size: 14px;
-    color: gainsboro;
-    margin-top: 20px;
-    line-height: 20px;
-  }
-  .connect {
-    margin-left: 15px;
-    margin-top: 40px;
-
-    font-size: 14px;
-    color: gainsboro;
-  }
-  .fb {
-    margin-left: -680px;
-  }
-  .fbimg {
-    width: 40px;
-    height: 40px;
-  }
-  .twitimg {
-    margin-top: -39px;
-    width: 40px;
-    height: 40px;
-    margin-left: 5px;
-  }
-
-  .connect2 {
-    margin-top: -70px;
-    font-size: 14px;
-    margin-left: 240px;
-    color: gainsboro;
-  }
-  .google {
-    margin-left: -260px;
-  }
-
-  .googleimg {
-    margin-left: 490px;
-    width: 130px;
-    height: 40px;
-    margin-top: 10px;
-  }
-  .appleimg {
-    margin-left: 630px;
-    margin-top: -40px;
-    width: 130;
-    height: 40px;
-  }
+    h4 {
+        display: none;
+    }
+    .name {
+        margin: 30px 10px;
+        font-size: 18px;
+        margin-right: 60px;
+    }
+    .search {
+        display: none;
+    }
+    .log {
+        margin-top: -5px;
+    }
+    .button {
+        width: 100px;
+        font-size: 14px;
+        margin-left: 80px;
+        margin-top: -5px;
+    }
+    .coverimg {
+        height: 180px;
+    }
+    .footer {
+        margin-left: 20px;
+        height: 700px;
+    }
+    .abt {
+        font-size: 13px;
+        margin-left: 2px;
+        line-height: 10px;
+    }
+    .copy {
+        width: 520px;
+        font-size: 14px;
+        color: gainsboro;
+        margin-top: 20px;
+        line-height: 20px;
+    }
+    .connect {
+        margin-left: 15px;
+        margin-top: 40px;
+        font-size: 14px;
+        color: gainsboro;
+    }
+    .fb {
+        margin-left: -680px;
+    }
+    .fbimg {
+        width: 40px;
+        height: 40px;
+    }
+    .twitimg {
+        margin-top: -39px;
+        width: 40px;
+        height: 40px;
+        margin-left: 5px;
+    }
+    .connect2 {
+        margin-top: -70px;
+        font-size: 14px;
+        margin-left: 240px;
+        color: gainsboro;
+    }
+    .google {
+        margin-left: -260px;
+    }
+    .googleimg {
+        margin-left: 490px;
+        width: 130px;
+        height: 40px;
+        margin-top: 10px;
+    }
+    .appleimg {
+        margin-left: 630px;
+        margin-top: -40px;
+        width: 130;
+        height: 40px;
+    }
+    .prev,
+    .next {
+        top: 20%;
+    }
 }
+
 @media screen and (min-width: 541px) and (max-width: 770px) {
-  h4 {
-    display: none;
-  }
-  .name {
-    margin: 30px 10px;
-    font-size: 18px;
-    margin-right: 340px;
-  }
-  .search {
-    display: none;
-  }
-  .log {
-    margin-top: -5px;
-  }
-  .button {
-    width: 100px;
-    font-size: 14px;
-
-    margin-left: 40px;
-    margin-top: -5px;
-  }
-  .coverimg {
-    height: 250px;
-  }
-  .heading {
-    margin-left: 10px;
-    font-size: 17px;
-  }
-  .heading1 {
-    margin-left: 10px;
-    font-size: 17px;
-  }
-  .wrapper {
-    max-height: 230px;
-    display: flex;
-    overflow-x: auto;
-    margin-left: 6px;
-  }
-  .wrapper .item {
-    margin: 0px 3px 0px 8px;
-
-    width: 220px;
-    height: 200px;
-  }
-  .footer {
-    margin-left: 20px;
-    height: 400px;
-  }
-  .abt {
-    font-size: 13px;
-    margin-left: 2px;
-    line-height: 10px;
-  }
-  .about {
-    width: 340px;
-  }
-  .copy {
-    width: 340px;
-    font-size: 12px;
-    color: gainsboro;
-    margin-top: 20px;
-    line-height: 20px;
-  }
-  .connect {
-    margin-left: 400px;
-    margin-top: -133px;
-
-    font-size: 14px;
-    color: gainsboro;
-  }
-  .fb {
-    margin-left: -300px;
-  }
-  .fbimg {
-    width: 40px;
-    height: 40px;
-  }
-  .twitimg {
-    width: 40px;
-    height: 40px;
-    margin-top: -40px;
-    margin-left: 5px;
-  }
-
-  .connect2 {
-    margin-top: -75px;
-    font-size: 14px;
-    margin-left: 570px;
-    color: gainsboro;
-  }
-
-  .googleimg {
-    margin-left: 570;
-    width: 130px;
-    height: 40px;
-    margin-top: 10px;
-  }
-  .appleimg {
-    margin-left: 570px;
-    margin-top: 10px;
-    width: 130;
-    height: 40px;
-  }
+    h4 {
+        display: none;
+    }
+    .name {
+        margin: 30px 10px;
+        font-size: 20px;
+        margin-right: 340px;
+    }
+    .search {
+        display: none;
+    }
+    .log {
+        margin-top: -5px;
+    }
+    .button {
+        width: 100px;
+        font-size: 14px;
+        margin-left: 40px;
+        margin-top: -5px;
+    }
+    .coverimg {
+        height: 250px;
+    }
+    .heading {
+        margin-left: 10px;
+        font-size: 17px;
+    }
+    .heading1 {
+        margin-left: 10px;
+        font-size: 17px;
+    }
+    .wrapper {
+        max-height: 280px;
+        display: flex;
+        overflow-x: auto;
+        margin-left: 6px;
+    }
+    .wrapper .item {
+        margin: 0px 3px 0px 8px;
+        width: 200px;
+        height: 240px;
+    }
+    .footer {
+        margin-left: 20px;
+        height: 400px;
+    }
+    .abt {
+        font-size: 13px;
+        margin-left: 2px;
+        line-height: 10px;
+    }
+    .about {
+        width: 340px;
+    }
+    .copy {
+        width: 340px;
+        font-size: 12px;
+        color: gainsboro;
+        margin-top: 20px;
+        line-height: 20px;
+    }
+    .connect {
+        margin-left: 400px;
+        margin-top: -133px;
+        font-size: 14px;
+        color: gainsboro;
+    }
+    .fb {
+        margin-left: -300px;
+    }
+    .fbimg {
+        width: 40px;
+        height: 40px;
+    }
+    .twitimg {
+        width: 40px;
+        height: 40px;
+        margin-top: -40px;
+        margin-left: 5px;
+    }
+    .connect2 {
+        margin-top: -75px;
+        font-size: 14px;
+        margin-left: 570px;
+        color: gainsboro;
+    }
+    .googleimg {
+        margin-left: 570;
+        width: 130px;
+        height: 40px;
+        margin-top: 10px;
+    }
+    .appleimg {
+        margin-left: 570px;
+        margin-top: 10px;
+        width: 130;
+        height: 40px;
+    }
+    .prev,
+    .next {
+        top: 18%;
+    }
 }
+
 @media screen and (min-width: 771px) and (max-width: 1100px) {
-  h4 {
-    display: none;
-  }
-  .name {
-    margin: 30px 10px;
-    font-size: 18px;
-    margin-right: 400px;
-  }
-
-  .log {
-    margin-top: -5px;
-  }
-  .button {
-    width: 100px;
-    font-size: 14px;
-
-    margin-left: 60px;
-    margin-top: -5px;
-  }
-  .coverimg {
-    height: 300px;
-  }
-  .footer {
-    margin-left: 20px;
-    height: 500px;
-  }
-  .abt {
-    font-size: 13px;
-    margin-left: 2px;
-  }
-
-  .copy {
-    width: 500px;
-    font-size: 12px;
-    color: gainsboro;
-    margin-top: 20px;
-  }
-  .connect {
-    margin-left: 600px;
-    margin-top: -95px;
-
-    font-size: 14px;
-    color: gainsboro;
-  }
-  .fb {
-    margin-left: -100px;
-  }
-  .fbimg {
-    width: 40px;
-    height: 40px;
-  }
-  .twitimg {
-    width: 40px;
-    height: 40px;
-    margin-top: -40px;
-    margin-left: 5px;
-  }
-
-  .connect2 {
-    margin-top: -75px;
-    font-size: 14px;
-    margin-left: 770px;
-    color: gainsboro;
-  }
-  .google {
-    margin-left: 200px;
-  }
-  .googleimg {
-    margin-left: 570;
-    width: 130px;
-    height: 40px;
-    margin-top: 10px;
-  }
-  .appleimg {
-    margin-left: 570px;
-    margin-top: 10px;
-    width: 130;
-    height: 40px;
-  }
+    h4 {
+        display: none;
+    }
+    .name {
+        margin: 30px 10px;
+        font-size: 18px;
+        margin-right: 400px;
+    }
+    .log {
+        margin-top: -5px;
+    }
+    .button {
+        width: 100px;
+        font-size: 14px;
+        margin-left: 60px;
+        margin-top: -5px;
+    }
+    .coverimg {
+        height: 300px;
+    }
+    .footer {
+        margin-left: 20px;
+        height: 500px;
+    }
+    .abt {
+        font-size: 13px;
+        margin-left: 2px;
+    }
+    .copy {
+        width: 500px;
+        font-size: 12px;
+        color: gainsboro;
+        margin-top: 20px;
+    }
+    .connect {
+        margin-left: 600px;
+        margin-top: -95px;
+        font-size: 14px;
+        color: gainsboro;
+    }
+    .fb {
+        margin-left: -100px;
+    }
+    .fbimg {
+        width: 40px;
+        height: 40px;
+    }
+    .twitimg {
+        width: 40px;
+        height: 40px;
+        margin-top: -40px;
+        margin-left: 5px;
+    }
+    .connect2 {
+        margin-top: -75px;
+        font-size: 14px;
+        margin-left: 770px;
+        color: gainsboro;
+    }
+    .google {
+        margin-left: 200px;
+    }
+    .googleimg {
+        margin-left: 570;
+        width: 130px;
+        height: 40px;
+        margin-top: 10px;
+    }
+    .appleimg {
+        margin-left: 570px;
+        margin-top: 10px;
+        width: 130;
+        height: 40px;
+    }
+    .prev,
+    .next {
+        top: 16%;
+    }
 }
