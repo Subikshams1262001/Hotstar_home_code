@@ -3,6 +3,7 @@
 <head>
     <title>Disney+ Hotstar-Watch TV Shows </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="icon" type="hotstrlogo/ico" href="images/hotstrlogo.jpg" width="250" height="200">
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -10,7 +11,40 @@
 
 <body>
     <div class="header">
-        <p class="name"><i class="fa fa-bars"></i>&nbsp &nbsp<span class="star">Disney+hotstar</span></p>
+        <p class="name">
+            <div class="dropdown">
+                <i class="fa fa-bars" id="bar"></i>
+                <div class="dropdown-content" id="dis">
+                    <a href="#"><i class="fa fa-microchip"></i>&nbsp &nbspChannels</a>
+                    <a href="#"><i class="fa fa-language"></i>&nbsp &nbsplanguages</a>
+                    <a href="#"><i class="fa fa-sticky-note"></i>&nbsp &nbspGenres</a>
+                </div>
+
+            </div>
+            &nbsp &nbsp &nbsp<span class="star">Disney+hotstar</span></p>
+
+
+
+
+
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="#"><i class="fa fa-microchip"></i>&nbsp &nbspChannels</a>
+            <a href="#"><i class="fa fa-language"></i>&nbsp &nbsplanguages</a>
+            <a href="#"><i class="fa fa-sticky-note"></i>&nbsp &nbspGenres</a>
+
+        </div>
+
+        <button class="openbtn" onclick="openNav()">☰</button>
+
+
+
+
+
+
+
+
+
         <div class="header_left">
             <div class="dropdown">
                 <h4 class="tv">TV</h4>
@@ -54,46 +88,47 @@
                     <a href="#">Athletics</a>
                 </div>
             </div>
-            <h4 class="news">News</h4>
-            <h4 class="pre">Premium</h4>
-            <h4 class="new">Disney+
+            <h4><a href="#" class="news">News</a></h4>
+            <h4><a href="#" class="pre">Premium</a></h4>
+            <h4><a href="https://www.hotstar.com/in/disneyplus" class="news">Disney+</a>
                 <a href="https://www.hotstar.com/in/disneyplus"><br><span class="spa"> &nbsp &nbsp  New</span></a>
             </h4>
 
-            <h4 class="kid">KIDS</h4>
+            <h4><a href="#" class="kid">KIDS</a></h4>
             <p class="search">Search<i class="fa fa-search"></i></p>
             <button class="button"><a href="https://sharp-mccarthy-2516c9.netlify.app/" class="anchor">SUBSCRIBE</a></button>
-            <p class="log">LOGIN</p>
+            <p class="log"><a href="#" class="log">LOGIN</a></p>
         </div>
     </div>
 
 
-
-
     <div class="mySlides fade">
-        <div class="numbertext"></div>
+
         <img src="images/coverimg4.jpg" class="coverimg">
 
     </div>
 
     <div class="mySlides fade">
-        <div class="numbertext"></div>
+
         <img src="images/coverimg6.jpg" class="coverimg">
 
     </div>
 
     <div class="mySlides fade">
-        <div class="numbertext"></div>
+
         <img src="images/coverimg7.jpg" class="coverimg">
 
     </div>
     <div class="mySlides fade">
-        <div class="numbertext"></div>
+
         <img src="images/coverimg9.jpg" class="coverimg">
 
     </div>
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+
     <h3 class="heading1">Latest & Trending</h3>
     <div class="wrapper">
         <img src="images/movie1.jpg" class="item">
