@@ -937,7 +937,7 @@ a:link {
         display: block;
     }
     .sidepanel {
-        width: 70%;
+        width: 0;
         position: fixed;
         z-index: 1;
         height: 100%;
@@ -1078,7 +1078,7 @@ a:link {
         display: block;
     }
     .sidepanel {
-        width: 70%;
+        width: 0;
         position: fixed;
         z-index: 1;
         height: 100%;
@@ -1238,7 +1238,7 @@ a:link {
         display: block;
     }
     .sidepanel {
-        width: 70%;
+        width: 0;
         position: fixed;
         z-index: 1;
         height: 100%;
@@ -1377,7 +1377,7 @@ a:link {
         display: block;
     }
     .sidepanel {
-        width: 70%;
+        width: 0;
         position: fixed;
         z-index: 1;
         height: 100%;
